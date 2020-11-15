@@ -1,21 +1,21 @@
 #----------------------#
 # author: ENES
 # date: 15 Nov 2020
-# subject: statistisc with python coding
+# subject: statistisc with python coding - mean_median_mode
 #----------------------#
 
 
 # Statistics Find _ Mean _ Median and Mode of a list
 # this file includes statistics practices - source of these problems is hackerrank Statistics challenge
 
-# note : hacerrank solution down below
+# note : hackerrank solution down below
 
 #Numbers list 
 numbers = [23523, 11735, 35252, 23552, 64545, 23626, 14470, 4978, 56453, 38120, 62353, 12412]
 
 # Mean sometimes called average
 # 1 - calculate sum of the all elements in our list
-# 2 - Divide the result by ength of the list
+# 2 - Divide the result by length of the list
 
 # total = 0
 # for number in numbers:
