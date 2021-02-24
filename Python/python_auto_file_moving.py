@@ -25,7 +25,7 @@ def filesToTransfer(filesToMove):
     '''
     for filename in os.listdir(sourceFolderPath):
         filePath = os.path.join(sourceFolderPath,filename) # can be manually joined
-        filesToMove.append(filePath) # update the files list 
+        filesToMove.append(filePath) # update the files list
     return filesToMove
 
 def moveFiles(filesToMove):
@@ -38,7 +38,7 @@ def moveFiles(filesToMove):
 
 if __name__ == '__main__':
     '''
-        An endless while loop is not suitable for these kind of operations beacuse we are not creating or moving files from one folder to another one
+        An endless while loop is not suitable for these kind of operations beacuse we are not creating or moving files all the time
         It is better to use a automation script at startup or with a time interval 
     '''
     filesToMove = [] 
