@@ -69,4 +69,23 @@ WHERE CITY LIKE "a%" or CITY LIKE "e%" or CITY LIKE "i%" or CITY LIKE "o%" or CI
 
 
 
+
+/*
+UNDERSTANDING CEIL - ROUND - FLOOR difference
+SET @variable1 = (select AVG(REPLACE(Salary, '0' , '')) from EMPLOYEES);
+SET @variable2 = (select AVG(Salary) from EMPLOYEES);
+SELECT @variable2 - @variable1
+*/
+
+
+Ceil is gonna round it to the nex value 
+if it is positive goes one number higher  13.25 goes 14
+if it is negative goes one number lower  -13.25 goes 14
+
+SELECT CEIL(AVG(Salary) - AVG(REPLACE(Salary, '0',''))) FROM EMPLOYEES;
+
+
+
+
+
 Source : hacker rank sql https://www.hackerrank.com/domains/sql?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=sql
