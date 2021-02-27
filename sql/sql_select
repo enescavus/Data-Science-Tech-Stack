@@ -86,6 +86,48 @@ SELECT CEIL(AVG(Salary) - AVG(REPLACE(Salary, '0',''))) FROM EMPLOYEES;
 
 
 
+/* 
+create a new column
+do multipications 
+get counts
+*/
 
+
+SELECT salary * months AS earnings, count(*) from Employee GROuP BY earnings ORDER BY earnings DESC LIMIT 1;
+
+
+
+/*
+SUM - ROUND 
+*/
+
+SELECT ROUND(SUM(LAT_N),2), ROUND(SUM(LONG_W),2) FROM STATION ;
+/*
+WHERE - SUM - ROUND 
+*/
+
+select round(sum(LAT_N),4) from STATION where LAT_N > 38.7880 AND  LAT_N < 137.2345;
+
+/*
+WHERE - MAX - ROUND 
+*/
+select round(max(LAT_N),4) from STATION where LAT_N < 137.2345;
+
+/*
+WHERE - ORDER BY ____ DESC - ROUND 
+*/
+select ROUND(LONG_W, 4) from STATION where LAT_N < 137.2345 ORDER BY LAT_N DESC LIMIT 1 ;
+
+/*
+WHERE - MIN - ROUND 
+*/
+select ROUND(MIN(LAT_N),4) from STATION where LAT_N > 38.7780;
+
+/*
+WHERE - ORDER BY ____ ASC - ROUND 
+*/
+select ROUND(LONG_W,4) from STATION where LAT_N > 38.7780 ORDER BY LAT_N ASC LIMIT 1;
 
 Source : hacker rank sql https://www.hackerrank.com/domains/sql?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=sql
+
+
