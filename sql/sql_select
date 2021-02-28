@@ -92,10 +92,7 @@ do multipications
 get counts
 */
 
-
 SELECT salary * months AS earnings, count(*) from Employee GROuP BY earnings ORDER BY earnings DESC LIMIT 1;
-
-
 
 /*
 SUM - ROUND 
@@ -127,6 +124,31 @@ select ROUND(MIN(LAT_N),4) from STATION where LAT_N > 38.7780;
 WHERE - ORDER BY ____ ASC - ROUND 
 */
 select ROUND(LONG_W,4) from STATION where LAT_N > 38.7780 ORDER BY LAT_N ASC LIMIT 1;
+
+/* 2 different tables operatins */
+
+select sum(CITY.POPULATION)
+from CITY, COUNTRY
+where CITY.COUNTRYCODE = COUNTRY.CODE AND COUNTRY.CONTINENT = 'Turkey';
+
+
+/* MORE  * /
+
+select sum(CITY.POPULATION)
+from CITY
+inner join COUNTRY on CITY.COUNTRYCODE = COUNTRY.CODE
+where COUNTRY.CONTINENT = 'Turkey' ;
+
+select CITY.NAME
+from CITY
+inner join COUNTRY on COUNTRY.CODE = CITY.COUNTRYCODE
+where COUNTRY.CONTINENT = 'Turkey'
+;
+
+SELECT COUNTRY.CONTINENT, FLOOR(AVG(CITY.POPULATION))
+FROM CITY INNER JOIN COUNTRY
+ON CITY.COUNTRYCODE = COUNTRY.CODE
+GROUP BY COUNTRY.CONTINENT;
 
 Source : hacker rank sql https://www.hackerrank.com/domains/sql?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=sql
 
