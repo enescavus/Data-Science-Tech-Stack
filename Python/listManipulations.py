@@ -1,7 +1,7 @@
 """
 author : Enes Çavuş
 subject : understanding list functions
-date : 23 Feb 2021
+date : 28 Feb 2021
 goal : to practice list functions and solve hackerrank questions/problems
 sources : https://www.hackerrank.com/dashboard
 """
