@@ -11,7 +11,8 @@ DATE -- Year-Month-Day
 TIMESTAMP  -- Detailed Date with Hour-Min-Sec - similar to date
 BLOB -- Binary Large Objects ---- images, files etc
 
-Create tables -- 													     -- June 30
+-- June 30
+-- Create tables  													     
 
 CREATE TABLE student (
 	student_id INT PRIMARY KEY,
@@ -40,7 +41,8 @@ DROP TABLE student;
 ALTER TABLE student ADD newColumnName DECIMAL (3,2); 
 ALTER TABLE student DROP COLUMN columnName;
 
----- insertion - operations - 											  -- July 1
+-- July 1
+---- insertion - operations - 											  
 INSERT INTO student VALUES(1,'Enes','CompSci');
 SELECT * FROM student;
 
@@ -55,7 +57,8 @@ INSERT INTO student(student_id, name) VALUES(4,'Esra');
 -- How to delete data/row from table
 DELETE FROM student WHERE student_id = 4;
 
----- CONSTRAINTS -> NOT NULL - UNIQUE - DEFAULT - AUTO_INCREMENT			-- Jul 2
+-- July 2
+---- CONSTRAINTS -> NOT NULL - UNIQUE - DEFAULT - AUTO_INCREMENT			
 
 -- Start from scratch to understand it better 
 -- First things first drop the table;
@@ -92,8 +95,9 @@ INSERT INTO student(student_id, name) VALUES(1,'Enes');
 INSERT INTO student(name, major) VALUES('Enes', 'Computer Science');
 INSERT INTO student(name, major) VALUES('Aslı', 'Computer Science'); -- The student_id will be assigned automatically.
 
+-- July 3
 -- UPDATE & DELETE 
--- (UPDATE table SET things)												-- July 3
+-- (UPDATE table SET things)												
 
 -- Let's say we want to shorten the Computer Science major to CS
 
@@ -117,7 +121,9 @@ UPDATE student SET major = 'Engineer' WHERE major = 'CS' OR major = 'Mechanics';
 
 DELETE FROM student WHERE student_id = 3; --who's Kenan in our case
 
--- BASIC QUERIS WITH SQL // ORDER BY										 -- July 4
+
+-- July 4
+-- BASIC QUERIS WITH SQL // ORDER BY										 
 
 SELECT student.name, student.major FROM student;
 SELECT name, major FROM student
