@@ -2,14 +2,11 @@
 -- subject  : SQL database and query practices with MySQL
 -- date     : July 2021
 
--- 6 July 2021
-
 -- this file contains a few queries of creating a company database from scratch based on this source -- https://www.mikedane.com/databases/sql/creating-company-database/
-
 -- After creation, there are lots of more copmlex QUERY practices about this base database;
 
 -- just a few examples of creating and manipulation data TABLES below 
--- NOTE: NOT ALL steps, just intro and most common steps
+-- NOTE: NOT ALL steps, just intro and most common steps									-- 6 July 2021
 
 CREATE TABLE employee ( 
 	emp_id INT PRIMARY KEY, 
@@ -54,7 +51,7 @@ select * from branch_supplier;
 
 -- these tables are all connected with bunch of foreign keys 
 
--- More Basic Queris with complex database							-- 7 July
+-- More Basic Queris with complex database													-- 7 July
 
 -- find all employees
 SELECT * from employee;
@@ -103,7 +100,7 @@ SELECT COUNT(sex), sex FROM employee GROUP BY sex;
 -- get sales info for each employee -- how much they sold
 SELECT emp_id, SUM(total_sales) AS Sold FROM works_with GROUP BY emp_id;
 
--- WILD CARDS 									-- July 8
+-- WILD CARDS 																			      -- July 8
 -- find clients from LLC company ----LIKE keyword
 
 SELECT *
@@ -132,7 +129,7 @@ WHERE birth_date LIKE "____-10%";
 -- ^	Represents any character not in the brackets	h[^oa]t finds hit, but not hot and hat
 -- -	Represents a range of characters	c[a-b]t finds cat and cbt
 
--- 	UNION														--JULY 9 
+-- 	UNION																					 --JULY 9 
 -- combine data into a single table
 -- get list of employesss and branch names from 2 different tables
  
@@ -196,7 +193,7 @@ RIGHT JOIN employee ON employee.emp_id = branch.mgr_id;
 -- | NULL        | Andy       |
 -- | NULL        | Jim        |
 -- +-------------+------------+
----- NESTED QUERIES 						-- JULY 10  
+---- NESTED QUERIES 																		 -- JULY 10  
 
 -- find employees who sold 20.000 or more to single client
 -- first query
@@ -244,7 +241,7 @@ WHERE client.branch_id IN (
 -- +---------------------+
 
 
--- ON DELETE SET NULL & ON DELETE CASCADE 						-- July 11
+-- ON DELETE SET NULL & ON DELETE CASCADE 													-- July 11
 -- 1-  SET NULL is setting the deleted and related value (foreign key in general ) to NULL
 -- 2- SET CASCADE is setting the deleted and related data's whole ROW- whole data
 
@@ -280,7 +277,7 @@ select * from branch;
 -- |         4 | Science     |   NULL | NULL           |
 -- +-----------+-------------+--------+----------------+
 
--- TRIGGERS 												July 12
+-- TRIGGERS 																				--July 12
 CREATE TABLE LOG_Table (
 	log_value VARCHAR(50)
 );
