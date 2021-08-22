@@ -1,15 +1,16 @@
-## __Git ve Github - Terminal Üzerinde Git İşlemleri, Komut Açıklamaları ve Pull Request__
+
+### __Git ve Github - Terminal Üzerinde Git İşlemleri, Komut Açıklamaları ve Pull Request__
 
 ---
 
 ### Table of Contents
+
 1. [Initialization & Local Repo Operations](#init)
 2. [Branch (Dallanma)](#branch)
 3. [Undoing in Git](#undoing)
 4. [Pull Request - Open Source](#pr)
 
 ---
-
 
 ### 1. Initialization & Local Repo Operations <a name="init"></a>
 
@@ -73,6 +74,8 @@ Değişiklikleri remote branch’e push
 
 > ``` git merge (source branch) (target branch) ```
 
+---
+
 ### 3. Git İşlem Geri Alma ( Undoing In Git) <a name="undoing"></a>
 
 Eğer git add ile değişiklikleri lokal reponuza kaydetmişseniz bu işemleri geri almak için 
@@ -107,7 +110,6 @@ Ekip çalışmalarında projenin güncel halinin lokal’de de bulunması gerekt
 Benzer bir işlem olan git fetch ve git pull arasındaki farklara dair çok güzel bir açıklama -> [Pull & Fetch](https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch)
 
 ---
-
 
 ### 4. PULL REQUEST <a name="pr"></a>
 
