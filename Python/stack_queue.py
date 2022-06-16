@@ -1,0 +1,48 @@
+# hackerrank Inheritance problem solution
+# problem link --- > https://www.hackerrank.com/challenges/30-queues-stacks/problem?isFullScreen=true
+class Solution:             # This class is my solution code , other lines had already given in the problem page
+    # Write your code here
+  stack = []
+  queue = []
+  def pushCharacter(self, chrcter):
+    self.stack.append(chrcter)
+    
+  def enqueueCharacter(self,chrcter):
+    self.queue.append(chrcter)
+    
+  def popCharacter(self):
+    return self.stack.pop()
+  def dequeueCharacter(self):
+    return self.queue.pop(0)
+  
+# read the string s
+s=input()
+#Create the Solution class object
+obj=Solution()   
+
+l=len(s)
+# push/enqueue all the characters of string s to stack
+for i in range(l):
+    obj.pushCharacter(s[i])
+    obj.enqueueCharacter(s[i])
+    
+isPalindrome=True
+'''
+pop the top character from stack
+dequeue the first character from queue
+compare both the characters
+''' 
+for i in range(l // 2):
+    if obj.popCharacter()!=obj.dequeueCharacter():
+        isPalindrome=False
+        break
+#finally print whether string s is palindrome or not.
+if isPalindrome:
+    print("The word, "+s+", is a palindrome.")
+else:
+    print("The word, "+s+", is not a palindrome.")
+
+
+#check out the source code - and problem page on hackerrank link below
+
+#### https://www.hackerrank.com/challenges/30-queues-stacks/problem?isFullScreen=true
