@@ -1,4 +1,4 @@
-# hackerrank Inheritance problem solution
+# hackerrank class Inheritance problem solution
 # problem link --- > https://www.hackerrank.com/challenges/30-inheritance/problem?isFullScreen=true
 
 

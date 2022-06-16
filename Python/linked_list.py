@@ -1,4 +1,4 @@
-# hackerrank Inheritance problem solution
+# hackerrank linked-list problem solution
 # problem link --- > https://www.hackerrank.com/challenges/30-linked-list/problem?isFullScreen=true
 
 class Node:

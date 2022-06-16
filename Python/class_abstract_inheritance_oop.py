@@ -1,4 +1,4 @@
-# hackerrank Inheritance problem solution
+# hackerrank class abstract Inheritance problem solution
 # problem link --- > https://www.hackerrank.com/challenges/30-abstract-classes/problem?isFullScreen=true
 
 # My solution with super() method and abstract function display

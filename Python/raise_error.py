@@ -1,4 +1,4 @@
-# hackerrank Inheritance problem solution
+# hackerrank raise error problem solution
 # problem link --- >https://www.hackerrank.com/challenges/30-exceptions-string-to-integer/problem?isFullScreen=true
 class Calculator():
   

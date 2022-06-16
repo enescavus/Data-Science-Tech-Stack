@@ -1,4 +1,4 @@
-# hackerrank Inheritance problem solution
+# hackerrank stack - queue problem solution
 # problem link --- > https://www.hackerrank.com/challenges/30-queues-stacks/problem?isFullScreen=true
 class Solution:             # This class is my solution code , other lines had already given in the problem page
     # Write your code here
